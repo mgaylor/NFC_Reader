@@ -39,6 +39,12 @@ NfcAdapter nfc = NfcAdapter(pn532_i2c);
 // for WiFi
 #include <WiFi.h>
 
+// for WiFi
+const char* ssid = "mySSID";
+const char* password = "myPASSWORD";
+// for MQTT
+const char* mqtt_server = "192.168.x.x";
+
 //for display:
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
@@ -73,13 +79,6 @@ static const unsigned char PROGMEM logo_bmp[] =
   0b00000000, 0b00110000 };
 
   // end for display
-
-// for WiFi
-const char* ssid = "mySSID";
-const char* password = "myPASSWORD";
-// for MQTT
-const char* mqtt_server = "192.168.x.x";
-
 
 // Allocate the JSON document
 //
